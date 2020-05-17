@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js
+    "></script>
+    <style>
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 4px solid #000;
+        margin-bottom: 10px;
+      }
+      body {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f4f4;
+        line-height: 1.5em;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+      #div1{
+        background: rgb(152, 179, 162);
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 300;
+        color: rgb(60, 60, 65);
+        width: 500px;
+        height: 90px;
+        padding: 40px;
+        text-align: center ;
+        border: solid 1px rgb(75, 70, 70);
+      }
+    
+    </style>
+  </head>
+  <body>
+    <header> JQaury assginment </header>
+
+
+    <div id="container">
+
+        <button id="but1">button1</button>
+        <button id="but2">button2</button>
+        <hr>
+        <button id="butx">buttonX</button>
+        <button id="but3">button3</button>
+        <hr>
+        <button id="but4">button4</button>
+        <button id="but5">button5</button>
+        <hr>
+        <button id="but6">button6</button>
+        <hr>
+        <button id="but7">button7</button>
+        <hr>
+        <button id="but8">button8</button>
+        <hr>
+        <button class="but">one</button>
+        <button class="but">two</button>
+        <button class="but">three</button> <br>
+        <input type="text" id="input">
+
+        <hr>
+
+        <div id="div1"> Here we go dude </div>
+      
+    </div>
+
+    <script>
+      
+      $('#but1').click(function () {
+
+          $('#div1').fadeOut(function () {
+              $('#but1').text('Ammar')
+          })
+      })
+      $('#but2').click(function () {
+
+          $('#div1').fadeIn()
+      })
+      //-----
+      $('#butx').click(function () {
+
+          $('#div1').slideUp()
+      })
+      $('#but3').click(function () {
+
+          $('#div1').slideDown()
+      })
+      //-----
+      $('#but4').click(function () {
+
+          $('#div1').hide()
+      })
+      $('#but5').click(function () {
+
+          $('#div1').show()
+      })
+      //------
+      $('#but6').click(function () {
+
+          $('#div1').toggle(function () {
+            $('#div1').html('<h1>hello world</h1>')
+          }) 
+      })
+
+      //-----
+
+      $('#but7').click(function () {
+
+          $('#div1').fadeToggle(function () {
+            $('#div1').text('hello world')
+          }) 
+      })
+
+      //-----
+
+      $('#but8').click(function () {
+          
+          $('#div1').appendTo(function () {
+              
+              $('#div1').text('Iam gonna do it')
+          })
+      })
+      //-------
+
+      $('.but').click(function () {
+          
+          var ammar = $(this).text()
+          $('#input').val(ammar)
+      })
+
+    
+    </script>
+  </body>
+</html>
