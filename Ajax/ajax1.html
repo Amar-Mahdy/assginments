@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax 1 - text file</title>
+</head>
+<body>
+
+    <button id="button">get text file</button>
+    <br><br><br>
+    <div id="text"></div>
+
+    <script>
+        //create event listener
+        document.getElementById('button').addEventListener('click', function () {
+            //console.log('button clicked');
+
+            //create xml object
+
+            var xml = new XMLHttpRequest(); 
+
+            // open = type , url/file name , async(true or false )
+
+            xml.open('get','sample.txt','true')
+
+            // use onreadystatchange (the old way to make request)
+
+            // xml.onreadystatechange = function () {
+            //     if (this.readyState == 4 && this.status == 200 ) {
+
+            //         console.log(this.responseText);
+                    
+            //     }
+            // }
+
+            xml.onload = function () {
+
+                if (this.status == 200) {
+
+                 //console.log(this.responseText);
+                  document.getElementById('text').innerHTML = this.responseText;
+                }else if (this.status == 404) {
+                    document.getElementById('text').innerHTML = 'not found'
+                }
+            }
+
+            //sends request
+
+            xml.send()
+            
+        })
+
+        // 200 is "ok"
+        // 403 is "forbidden"
+        // 404 is "not found"
+
+
+        // onready stat values
+        // 0: request not initializid
+        // 1: server connection iestablished
+        // 2: request received
+        // 3: processing request
+        // 4: request finished snd response is ready
+
+      
+    </script>
+    
+</body>
+</html> 
