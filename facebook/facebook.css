@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: san s-serif;
+  margin: auto;
+  padding: auto;
+  
+}
+.header {
+  background-color:#3A579A;
+  overflow: hidden;
+  
+  padding: 20px 0;
+
+}
+.img-control-align{
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.img-control{
+    float: left;
+   margin-left:300px ;
+}
+.login{
+    float: right;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-right: 300px;
+}
+
+.inputxt{
+    height: 25px;
+    width: 150px;
+    border: black 1px solid;
+   
+    
+}
+.login [type=button]{
+    background-color:#4669aa;
+    color: white;
+    width: 50px;
+    height: 25px;
+    border: solid #29487D 1px;
+    margin-left: 8px;
+    
+   
+}
+.content{
+
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color:rgb(198, 205, 212);
+}
+
+.left{
+   float: left;
+   padding-top: 60px;
+    padding-left: 250px;
+}
+
+.left h3{
+    color: #163F65;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+.right{
+    float: right;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 200px;
+    color: #163F65;
+    padding-top: 60px;
+}
+br{
+    border: solid 1px black;
+}
+.input1{
+    width: 170px;
+    height: 30px;
+    border: solid #BDC7D8 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.input2{
+    width: 350px;
+    height: 30px;
+    border: solid #BDC7D8 2px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.sellect{
+    width: 50px;
+    height: 30px;
+}
+.butt{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border: solid black 1px;
+    background-color: #60964D;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
