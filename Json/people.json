@@ -1,0 +1,22 @@
+{
+    "people": [
+
+        {
+            "name": "ammar",
+            "age": 27
+        },
+        {
+            "name": "ahmed",
+            "age": 47
+        },
+        {
+            "name": "salem",
+            "age": 23
+        },
+        {
+            "name": "mona",
+            "age": 33
+        }
+
+    ]
+}
